@@ -6,7 +6,7 @@ import Product from "../components/Product";
 const ProductList = ({products}) => {
     return (
       <ul className="ProductList">
-        {products.map(element => (<product product={element}/>))}
+        {products.map(element => (<Product product={element}/>))}
       </ul>
     );
 

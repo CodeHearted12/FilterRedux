@@ -10,4 +10,4 @@ const Product = ({product}) => {
       </li>
     )
 }
-export default product;
+export default Product;

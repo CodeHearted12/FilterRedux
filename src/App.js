@@ -1,7 +1,7 @@
 
 import React, {Component} from 'react';
 import './App.css';
-import FilterProducts from "./containers/FilterProducts";
+import FilterProducts from "./container/FilterProducts";
 import ProductList from "./container/ProductList";
 
 class App extends Component {

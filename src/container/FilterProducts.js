@@ -35,9 +35,6 @@ const mapStateToProps = function(state) {
     return {filter: state.filter}
 }
 
-// Review the `filterProducts` function
-// Take note of the parameter accepting a `filter` value from the `<button>` elements above
-// and passing said value to the reducer function we named `filterProducts` when we imported it into this file
 const mapDispatchToProps = function(dispatch) {
     return {
         filterProducts: function(filter) {
