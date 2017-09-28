@@ -1,8 +1,8 @@
+import React, {Component} from 'react'
+import './styles/App.css'
 
-import React, {Component} from 'react';
-import './App.css';
-import FilterProducts from "./container/FilterProducts";
-import ProductList from "./container/ProductList";
+import FilterProducts from "./container/FilterProducts"
+import ProductList from "./container/ProductList"
 
 class App extends Component {
     render() {
@@ -12,8 +12,8 @@ class App extends Component {
                 <FilterProducts/>
                 <ProductList/>
             </div>
-        );
+        )
     }
 }
 
-export default App;
+export default App

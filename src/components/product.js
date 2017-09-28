@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react'
 
-const Product = ({product}) => {
-  let {image,title,price} = product;
-  return (
+class Product extends Component {
+  render () {
+    const {product} = this.props
+
+    return (
       <li>
-        <img src={image} alt='images'/>
-        <h3>{title}</h3>
-        <h4>{price}</h4>
+        <img src={product.image} alt="Select your FAV!"/>
+        <h3>{product.title}</h3>
+        <h4>{product.price}</h4>
       </li>
     )
+  }
 }
-export default Product;
+
+export default Product

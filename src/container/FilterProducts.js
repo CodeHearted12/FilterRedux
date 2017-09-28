@@ -2,15 +2,15 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {filterProducts} from "../actions";
 
-
 class FilterProducts extends Component {
     createFilterRadio(value, text) {
         return (
 
-            <button key={value} className={this.props.filter === value ? 'active' : 'inactive'} onClick={ event => this.props.filterProducts(value) }>{text}</button>
+          
+            <button key={value} className={this.props.filter === value ? 'active' : 'inactive'} onClick={ event => this.props.filterProducts(value)}>{text}</button>
         )
     }
-    render() {
+    render () {
         const filterOptions = [
             [
               "all", "Show all"
@@ -34,6 +34,7 @@ class FilterProducts extends Component {
 const mapStateToProps = function(state) {
     return {filter: state.filter}
 }
+
 
 const mapDispatchToProps = function(dispatch) {
     return {

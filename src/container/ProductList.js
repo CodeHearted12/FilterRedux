@@ -1,15 +1,19 @@
-import React from 'react';
-import {connect} from 'react-redux'
 
+import {connect} from 'react-redux'
+import React, {Component} from 'react'
 import Product from "../components/Product";
 
-const ProductList = ({products}) => {
-    return (
+
+class ProductList extends Component {
+
+    return () {
+      const {products} = this.props;
+      return (
       <ul className="ProductList">
         {products.map(element => (<Product product={element}/>))}
       </ul>
     );
-
+  }
 }
 
 const mapStateToProps = function(state) {
