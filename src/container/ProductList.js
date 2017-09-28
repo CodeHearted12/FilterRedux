@@ -6,7 +6,7 @@ import Product from "../components/Product";
 
 class ProductList extends Component {
 
-    return () {
+    render () {
       const {products} = this.props;
       return (
       <ul className="ProductList">

@@ -5,8 +5,6 @@ import {filterProducts} from "../actions";
 class FilterProducts extends Component {
     createFilterRadio(value, text) {
         return (
-
-          
             <button key={value} className={this.props.filter === value ? 'active' : 'inactive'} onClick={ event => this.props.filterProducts(value)}>{text}</button>
         )
     }
